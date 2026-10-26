@@ -1,8 +1,7 @@
 name: Atualizar dados de mobilidade
 on:
   schedule:
-    - cron: '30 5 * * *'
-      timezone: America/Sao_Paulo
+    - cron: '30 8 * * *' # 05:30 America/Sao_Paulo (UTC-3)
   workflow_dispatch:
 permissions:
   contents: write
