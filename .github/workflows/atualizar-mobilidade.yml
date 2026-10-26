@@ -1,5 +1,8 @@
 name: Atualizar dados de mobilidade
 on:
+  push:
+    paths:
+      - '.github/workflows/atualizar-mobilidade.yml'
   schedule:
     - cron: '30 8 * * *' # 05:30 America/Sao_Paulo (UTC-3)
   workflow_dispatch:
