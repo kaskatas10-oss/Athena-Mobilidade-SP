@@ -1,0 +1,27 @@
+name: Atualizar dados de mobilidade
+on:
+  schedule:
+    - cron: '30 5 * * *'
+      timezone: America/Sao_Paulo
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: atualizar-mobilidade
+  cancel-in-progress: false
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Consultar previsão de São Paulo
+        run: python3 scripts/atualizar_mobilidade.py
+      - name: Registrar snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/mobilidade.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Atualiza previsão matinal de mobilidade"
+            git push
+          fi
