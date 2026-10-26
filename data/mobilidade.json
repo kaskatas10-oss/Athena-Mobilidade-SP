@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-10-26T15:54:10.536402+00:00",
+  "source": "Open-Meteo",
+  "source_url": "https://open-meteo.com/",
+  "reference": "São Paulo, SP",
+  "current": {
+    "time": "2026-10-26T12:45",
+    "temperature_2m": 17.7,
+    "precipitation": 0.0,
+    "weather_code": 3
+  },
+  "today": {
+    "time": "2026-10-26",
+    "temperature_2m_max": 17.8,
+    "temperature_2m_min": 12.3,
+    "precipitation_probability_max": 75,
+    "precipitation_sum": 2.1
+  },
+  "transit": {
+    "line3": "Não verificado",
+    "line11": "Não verificado"
+  }
+}
