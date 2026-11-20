@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-11-19T17:29:49.048681+00:00",
+  "updated_at": "2026-11-20T17:04:26.112666+00:00",
   "source": "Open-Meteo",
   "source_url": "https://open-meteo.com/",
   "reference": "São Paulo, SP",
   "current": {
-    "time": "2026-11-19T14:15",
-    "temperature_2m": 30.9,
+    "time": "2026-11-20T14:00",
+    "temperature_2m": 32.1,
     "precipitation": 0.0,
-    "weather_code": 2
+    "weather_code": 3
   },
   "today": {
-    "time": "2026-11-19",
-    "temperature_2m_max": 31.0,
-    "temperature_2m_min": 19.7,
-    "precipitation_probability_max": 64,
-    "precipitation_sum": 1.0
+    "time": "2026-11-20",
+    "temperature_2m_max": 33.5,
+    "temperature_2m_min": 22.2,
+    "precipitation_probability_max": 79,
+    "precipitation_sum": 4.1
   },
   "transit": {
     "line3": "Não verificado",
